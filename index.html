@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <title>Relógio Digital</title>
 </head>
+
 <body>
     <div class="relogio">
-        <div>
-            <span id="horas">00</span>
-            <span class="tempo">Horas</span>
+        <div class="time-container">
+            <div class="time">
+                <span id="horas">00</span>
+                <span class="tempo">Horas</span>
+            </div>
+            <div class="time">
+                <span id="minutos">00</span>
+                <span class="tempo">Minutos</span>
+            </div>
+            <div class="time">
+                <span id="segundos">00</span>
+                <span class="tempo">Segundos</span>
+            </div>
         </div>
-        <div>
-            <span id="minutos">00</span>
-            <span class="tempo">Minutos</span>
-        </div>
-        <div>
-            <span id="segundos">00</span>
-            <span class="tempo">Segundos</span>
+        <div class="calendar">
+            <span id="date">dia da semana, 00 de 00 de 0000</span>
         </div>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
