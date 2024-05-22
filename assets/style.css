@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #DD5E89;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F7BB97, #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    width: 80vw;
+    max-height: 200px;
+    max-width: 550px;
+    background: transparent;
+    border-radius: 0.3rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.relogio div {
+    height: 64%;
+    width: 22%;
+    max-width: 150px;
+    max-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.4375rem;
+    letter-spacing: 0.1875rem;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.relogio span.tempo {
+    font-size: 0.625rem;
+}
+
+
+@media (max-width: 600px) {
+    .relogio {
+        height: 20vh; /* Ajusta a altura para caber melhor em telas menores */
+        width: 75vw; /* Ajusta a largura para caber melhor em telas menores */
+        max-width: none; /* Remove o limite para telas menores */
+        max-height: none; /* Remove o limite para telas menores */
+    }
+
+    .relogio div {
+        height: 70%; /* Reduz a altura dos elementos internos */
+        width: 25%; /* Reduz a largura dos elementos internos */
+        max-width: 120px; /* Ajusta o limite para telas menores */
+        max-height: 110px; /* Ajusta o limite para telas menores */
+    }
+
+    .relogio span {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .relogio span.tempo {
+        font-size: 0.5rem; /* Ajusta o tamanho da fonte */
+    }
+}
